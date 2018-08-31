@@ -1,0 +1,34 @@
+{
+    "name": "jourdon/sluggable",
+    "description": "Easy create slug for your Eloquent models in Laravel",
+    "keywords": [
+        "laravel",
+        "sluggable",
+        "eloquent",
+        "models",
+        "slug"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jourdon",
+            "email": "admin@qiehe.ne"
+        }
+    ],
+    "require": {
+        "laravel/framework": "~5.5",
+        "jourdon/slug": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jourdon\\Sluggable\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jourdon\\Sluggable\\ServiceProvider"
+            ]
+        }
+    }
+}

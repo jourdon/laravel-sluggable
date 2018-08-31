@@ -1,0 +1,30 @@
+<?php
+
+namespace App\Console\Commands;
+
+use DummyNamespace\DummyClass;
+use Illuminate\Console\Command;
+
+class DummyClassSlugCache extends Command
+{
+
+    protected $signature = 'jourdon:{{TableName}}-slug-cache {--queue}';
+
+    protected $description = '文章Slug生成缓存';
+
+
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
+    public function handle(DummyClass $model)
+    {
+        // 在命令行打印一行信息
+        $this->info("开始生成缓存...");
+
+        $model->SlugCache();
+
+        $this->info("成功存入！");
+    }
+}
